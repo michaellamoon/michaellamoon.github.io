@@ -2,19 +2,16 @@
 
 if(isset($_POST['submit'])){
   $name=$_POST['name'];
-  $email=$_POST['email'];
+  $emailfrom=$_POST['email'];
   $msg=$_POST['msg'];
 
-  $to= 'calartsplaydance@gmail.com';
-  $subject='form submit';
-  $message="name: " .$name. "/n". "msg: ". "/n/n".$msg;
-  $headers= "from: ".$email;
+  $mailto= "calartsplaydance@outlook.com";
+  $headers= "from: ".$emailfrom;
+  $txt="name: " .$name." ./n/n".$msg;
 
-  if(mail($to, $subject, $message, $headers)){
-    echo"<h1>sent! thank you </h1>";
-  }else{
-    echo "something went wrong";
-  }
+
+  mail($mailto, $txt, $headers);
+  header("Location: index.html^mailsend");
 }
 
 ?>
