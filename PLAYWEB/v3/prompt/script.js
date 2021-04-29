@@ -10,6 +10,11 @@ function startTimer() {
   if(s==59){m=m-1}
   if(m<0){
       document.getElementById("timerReset").innerHTML = "Time's up! Please click Submit";
+
+      var btn = document.createElement("BUTTON");
+        btn.innerHTML = "GO TO NEXT...";
+        btn.setAttribute('class', 'nextup');
+        document.body.appendChild(btn);
   }
 
   document.getElementById('timer').innerHTML =

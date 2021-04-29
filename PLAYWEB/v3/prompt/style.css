@@ -106,7 +106,30 @@ border: 2px solid #F3EDE2;
 .skip:hover{
   color: #595959;
 }
+/*---------------footer--------------------*/
+.nextup{
+  position: center;
+  display: block;
+  width: 10vw;
+  height: 4vw;
 
+  font-family: 'Kavivanar', cursive;
+  border-radius: 20px;
+  background-color: #F3EDE2;
+  border: none;
+  text-align: center;
+  color: #B8A27A;
+  font-size: 1.5vw;
+
+  cursor: pointer;
+
+  margin-left: 85vw;
+}
+.nextup:hover {
+background: #B8A27A;
+color: #F3EDE2;
+border: 2px solid #F3EDE2;
+}
 /*---------------footer--------------------*/
     .footer {
        position: fixed;
