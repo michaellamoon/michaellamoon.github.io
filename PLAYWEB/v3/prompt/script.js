@@ -11,7 +11,7 @@ function startTimer() {
   if(m<0){
       document.getElementById("timerReset").innerHTML = "Time's up! Please click Submit";
 
-      var btn = document.createElement("BUTTON");
+      var btn = document.getElementById("nextup");
         btn.innerHTML = "GO TO NEXT...";
         btn.setAttribute('class', 'nextup');
         document.body.appendChild(btn);
