@@ -1,47 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
+<html>
+  <head>
   <meta charset="UTF-8">
-  <title>EXAMPLE VER3.</title>
+  <title>PLAYDANCE</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "icon" href = "https://img.icons8.com/windows/32/000000/dancing-party.png" type = "image/x-icon">
+  </head>
+<style>
+@import url('https://use.typekit.net/izy0ffp.css');
 
+body, html {
+  height: 100%;
+  margin: 0;
 
-</head>
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.bgimg {
+  background-color: #F3EDE2;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  color: #F3EDE2;
+  font-size: 2vw;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  margin-left: 32vw;
+
+  text-align: right;
+  color: #F3EDE2;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  margin-left: 0px;
+  width: 40%;
+  color: #F3EDE2;
+}
+</style>
+
 <body>
-<div class="color-box">
-  <button class="buttonP center" onclick="window.location.href='https://michaellamoon.github.io/PLAYWEB/v3/selNum/'"> <span>PLAY</span> </button>
+
+<div class="bgimg">
+  <div class="color-box">
+    <div style="margin-left: 3vw;">
+      <h1>PLAY DANCE</h1>
+      <h1 style="font-size: 2vw; margin-top: -1vw;">COMING SOON <br>Premieres: Friday, May 7 @ 7pm PDT.</h1>
+      <hr>
+      <p id="demo" style="font-size:30px"></p>
+    </div>
+    <div class="bottomleft">
+      <p style="font-size: 1.3vw; margin-top: 0vw;">Let’s play a game.
+        <br>Let's look back together.
+        <br>On the past.
+        <br>On our unique pasts.
+        <br>Our unique childhoods.
+        <br>What do you remember?
+        <br>Who do you remember?
+
+        <br>We invite you to explore, play, and reflect through an all new interactive dance website.
+        <br> Allow your imagination to run freely and your memories to wash over you with joy.
+        <br>Get ready to write, draw, watch, listen, and enjoy as you please.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class= "intro-box">
-  <div class="module1" id="module1"></div>
-  <h3 class="name-1">name name <br><span style="font-size: 1vw;">project role <br>metier<br>
-    <a href="https://www.facebook.com/michaella.moon" class="fa fa-facebook"></a>
-    <a href="https://www.youtube.com/channel/UC4ZgulsB5ZZtH2cZBC_Jszw/playlists" class="fa fa-youtube"></a>
-    <a href="https://www.instagram.com/kaila_artcodes/" class="fa fa-instagram"></a>
-    <a href="https://github.com/michaellamoon" class="fa fa-github"></a>
-    <a href="https://michaellamoon.github.io/index.html" class="fa fa-rss"></a>
-  </span></h3>
 
-  <div class="module2" id="module2"></div>
-  <h3 class="name-2">name name <br><span style="font-size: 1vw;">project role <br>metier</span></h3>
 
-  <div class="module3" id="module3"></div>
-  <h3 class="name-3">name name <br><span style="font-size: 1vw;">project role <br>metier</span></h3>
-
-  <div class="module4" id="module4"></div>
-  <h3 class="name-4">name name <br><span style="font-size: 1vw;">project role <br>metier</span></h3>
 </div>
 
-<div class="footer">
-  <p>A project by Caitlin Javech, Music by Joshua Sadinsky, Website designed by
-Danny Baxter, Website created by Michaella Moon &copy; 2021</p>
-</div>
+<script>
+// Set the date we're counting down to  May 7, 2021 19:00:00
+var countDownDate = new Date("May 15, 2021 19:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+    window.location = "https://michaellamoon.github.io/PLAYWEB/v3/mainpg.html";
+
+  }
+}, 1000);
+</script>
+
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- partial -->
-<script  src="./script.js"></script>
-
 </html>

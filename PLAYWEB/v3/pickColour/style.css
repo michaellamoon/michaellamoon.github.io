@@ -50,16 +50,16 @@ img {
 .buttonP {
   position: center;
   display: block;
-  width: 10vw;
+  width: 8vw;
   height: 4vw;
 
   font-family: 'Kavivanar', cursive;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: #F3EDE2;
   border: none;
   text-align: center;
   color: #B8A27A;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 
   cursor: pointer;
 }
@@ -79,5 +79,6 @@ border: 2px solid #F3EDE2;
        width: 100%;
        background-color: #F3EDE2;
        color: #B8A27A;
+       font-size: 1vw;
        text-align: center;
     }

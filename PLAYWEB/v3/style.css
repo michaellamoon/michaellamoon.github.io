@@ -68,8 +68,8 @@ border: 2px solid #F3EDE2;
   width: 15vw;
   height: 20vw;
   border: 1px solid white;
-  background-image: url(https://images.squarespace-cdn.com/content/5a6a74ffe45a7cb3647a68e7/1529016116526-E830PFMOWLA6JAJJN072/78f738a18a38271241578619S0q2SgMDnZTMIquCovyU0uSSGP2U1OLM9LwY_VJDI2NDSwMToGyulZmpQQUQ6yRZGeoUWBkCAA.pr615628-2-3292202.jpg?content-type=image%2Fjpeg);
-  background-size: 100px;
+  background-image: url('bio/cait.jpeg');
+  background-size: 200px;
 
   margin-top: 10%;
   margin-left: 15%;
@@ -89,8 +89,8 @@ border: 2px solid #F3EDE2;
    width: 15vw;
    height: 20vw;
    border: 1px solid white;
-   background-image: url(https://images.squarespace-cdn.com/content/5a6a74ffe45a7cb3647a68e7/1529016116526-E830PFMOWLA6JAJJN072/78f738a18a38271241578619S0q2SgMDnZTMIquCovyU0uSSGP2U1OLM9LwY_VJDI2NDSwMToGyulZmpQQUQ6yRZGeoUWBkCAA.pr615628-2-3292202.jpg?content-type=image%2Fjpeg);
-   background-size: 100px;
+   background-image: url('bio/mich.jpg');
+   background-size: 200px;
 
    margin-top: 30%;
    margin-left: 15%;
@@ -110,10 +110,10 @@ border: 2px solid #F3EDE2;
     width: 15vw;
     height: 20vw;
     border: 1px solid white;
-    background-image: url(https://images.squarespace-cdn.com/content/5a6a74ffe45a7cb3647a68e7/1529016116526-E830PFMOWLA6JAJJN072/78f738a18a38271241578619S0q2SgMDnZTMIquCovyU0uSSGP2U1OLM9LwY_VJDI2NDSwMToGyulZmpQQUQ6yRZGeoUWBkCAA.pr615628-2-3292202.jpg?content-type=image%2Fjpeg);
-    background-size: 100px;
+    background-image: url('bio/danny.jpg');
+    background-size: 200px;
 
-    margin-top: -35%;
+    margin-top: -50%;
     margin-left: 58%;
   }
    .name-3{
@@ -131,10 +131,10 @@ border: 2px solid #F3EDE2;
      width: 15vw;
      height: 20vw;
      border: 1px solid white;
-     background-image: url(https://images.squarespace-cdn.com/content/5a6a74ffe45a7cb3647a68e7/1529016116526-E830PFMOWLA6JAJJN072/78f738a18a38271241578619S0q2SgMDnZTMIquCovyU0uSSGP2U1OLM9LwY_VJDI2NDSwMToGyulZmpQQUQ6yRZGeoUWBkCAA.pr615628-2-3292202.jpg?content-type=image%2Fjpeg);
-     background-size: 100px;
+     background-image: url('bio/josh.jpg');
+     background-size: 200px;
 
-     margin-top: 30%;
+     margin-top: 20%;
      margin-left: 58%;
    }
     .name-4{
@@ -184,5 +184,6 @@ border: 2px solid #F3EDE2;
        width: 100%;
        background-color: #F3EDE2;
        color: #B8A27A;
+       font-size: 1vw;
        text-align: center;
     }

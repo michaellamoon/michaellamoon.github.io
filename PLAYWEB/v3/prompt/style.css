@@ -28,7 +28,7 @@ img {
 }
 
 .countdown{
-  color:#595959;
+  color:#F3EDE2;
   font-size:1.5vw;
   text-align:right;
 
@@ -100,11 +100,12 @@ border: 2px solid #F3EDE2;
   margin-top: 3vw;
   margin-left: 30vw;
   font-size: .7vw;
+  color: #B8A27A;
 
   cursor: pointer;
 }
 .skip:hover{
-  color: #595959;
+  color: #F3EDE2;
 }
 /*---------------footer--------------------*/
 .nextup{
@@ -139,4 +140,5 @@ border: 2px solid #F3EDE2;
        background-color: #F3EDE2;
        color: #B8A27A;
        text-align: center;
+       font-size: 1vw;
     }

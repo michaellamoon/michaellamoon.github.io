@@ -37,25 +37,25 @@ body {
 /*---------------png--------------------*/
 #ball {
   cursor: -webkit-grab; cursor: grab;
-  width: 60px;
-  height: 60px;
+  width: 15vw;
+  height: 15vw;
 }
 
 #ball2 {
   cursor: -webkit-grab; cursor: grab;
-  width: 60px;
-  height: 60px;
+  width: 15vw;
+  height: 15vw;
 }
 #ball3 {
   cursor: -webkit-grab; cursor: grab;
-  width: 60px;
-  height: 60px;
+  width: 15vw;
+  height: 15vw;
 }
 
 #ball4 {
   cursor: -webkit-grab; cursor: grab;
-  width: 60px;
-  height: 60px;
+  width: 15vw;
+  height: 15vw;
 }
 /*---------------footer--------------------*/
     .footer {
