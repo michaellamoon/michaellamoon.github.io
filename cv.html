@@ -13,6 +13,10 @@
 <style>
 body {font-family: 'Poppins', sans-serif}
 html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
+.name{
+  font-size: 3vw;
+  line-height: 1vw;
+}
 </style>
 
 <body class="w3-light-grey">
@@ -27,12 +31,14 @@ html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <!--<img src="profile2.jpg" style="width:100%" alt="Avatar">-->
-          <div class="w3-container w3-text-black">
-            <h1>MICHAELLA<small> jung hyun</small> MOON</h1>
+          <div class="w3-container w3-text-orange">
+            <br><br>
+            <h1 class="name">MICHAELLA<br><span style="font-size:1vw; margin-left:8vw;color:black"> jung hyun</span> <br>MOON</h1>
+            <br><br>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Cellist, Interactive performance/ installation artist, Computer artist, Music technology, UI</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Cellist, Creative Coder, Interactive Performancer, Installation Artist, Music Technologist, UI Designer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-orange"></i>Vancouver, Canada + LA, USA </p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>moon.michaella@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>(+1)778-873-2418</p>
@@ -49,7 +55,8 @@ html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
             <p>HTML/CSS/Javascript</p>
             <p>Python</p>
             <p>Autocad Fusion30</p>
-            <p>Abode Illustrator, Premiere Pro</p>
+            <p>Adobe Illustrator, Premiere Pro</p>
+            <p>Reaper</p>
             <br>
 <!-- language -->
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-red"></i>Languages</b></p>
@@ -78,12 +85,18 @@ html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
       <div class="w3-container">
         <h5 class="w3-opacity"><b>The University of British Columbia</b> <sub> [School of Music]</sub> </h5>
         <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2020</h6>
-        <p> Bachelor Of Music (Cello) + Minor in Applied Music Technology</p><br>
+        <p> Bachelor of Music (Cello) + Minor in Applied Music Technology</p><br>
       </div>
     </div>
 <!-- awards -->
     <div class="w3-container w3-card w3-white w3-margin-bottom">
       <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Honors + Awards</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Lavine and Sternburg Scholarship</b></h5>
+        <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021</h6>
+        <p>CALARTS</p>
+        <hr>
+      </div>
       <div class="w3-container">
         <h5 class="w3-opacity"><b>Lillian Disney Scholarship</b></h5>
         <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
@@ -111,13 +124,61 @@ html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
     </div>
 <!-- work Experience -->
       <div class="w3-container w3-card w3-white ">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Experience</h2>
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>CALARTS EXPO // <i><small>Creative Coder, visual artist, producer, cellist, post-production, Interactive Web Designer</small></i> </b></h5>
+          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021</h6>
+          <p><u>project name: WORDS TRIGGER</u>
+            <br>This project connects RunwayML, Processing, MaxMsp and TouchDesigner to create an audio and visual rich
+            performance. The audio and visuals are all triggered by the text typed into the program. Depending on the
+            number of words typed in, Processing will grab the same amount of colour values from random points of the
+            collaged image created by RunwayML's AttnGAN. These colour values will be converted first into MIDI notes
+            then turned into a readable score the Cellist can improvise off from.  MaxMsp is programmed to pitch detect
+            36 notes ranging from C2-B4. As the Cellist plays, her notes will cause the TouchDesigner particle system to
+            change shapes, colour and positions.</p>
+          <p><span class="w3-tag w3-orange w3-round">{ RUNWAYML | PROCESSING | MAXMSP | TOUCHDESIGNER | CELLO | PROJECTION | HTML WEBSITE }</span></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>NEUROPERA // <i><small>Interactive Web Designer</small></i> </b></h5>
+          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2021 - May 2021</h6>
+          <p>This performance premiered on May 7th, 2021 as part of the CalArts Opera Theater class, the culmination of
+            eleven incredible artists working together over thirteen weeks to produce a virtual opera. Composed of distinct
+            pieces, much like the brain, NeurOpera functions as the organ within which we exchange and evolve the deeply
+            emotional and dynamic expressions of the human experience. Though physically separated from one another due
+            to the pandemic, we remained committed to connection, to forging new pathways amongst ourselves and our communities.
+            As the brain, we are sustained upon cooperation between compartments. Sustained upon the bridges we build
+            between the self and the other.</p>
+          <p><span class="w3-tag w3-orange w3-round">{ HTML | CSS | JQUERY }</span></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SIMPLE STEP // <i><small>Lead Developer</small></i> </b></h5>
+          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2021 - May 2021</h6>
+          <p>Simple Step is, as it's name suggests, is a simple and easy to understand step sequencer. For those who
+            do not know what a step sequencer is, it is a interface that allow you to set a number of pitches and
+            rhythm as "steps" in the constantly looping machine. It was designed for absolute beginners having in
+            mind they may not know musical terms and skills. Simple Step not only allows the user to easily play and
+            create music but also teaches them about basic musical components. </p>
+          <p><span class="w3-tag w3-orange w3-round">{ MAXMSP }</span></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>PLAYDANCE // <i><small> Interactive Web Designer</small></i> </b></h5>
+          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2021 - May 2021</h6>
+          <p>Let's play a game. Let's look back together. On our pasts. On our unique pasts. On our unique childhoods.
+            Play and reflect on your beautiful past through writing, drawing, and interacting with short dances.
+            There are seven unique experiences available to you that you can play in any order and for the duration you
+            please. Simply follow the prompts, and you will be guided to interact with the dancing as you see fit. </p>
+          <p><span class="w3-tag w3-orange w3-round">{ HTML | CSS | JQUERY | SOCKET.IO }</span></p>
+          <hr>
+        </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>CALARTS PLAYLAB// <i><small>visual programmer, visual artist, producer, audio technician</small></i> </b></h5>
           <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2021</h6>
           <p>PLAYLAB is a interdisciplinary performance group at CALARTS. In a small group of two dancers and two musicians/artists spread across countries,
           we managed to produce an interactive visual dance performance from our own homes.</p>
-          <p><span class="w3-tag w3-orange w3-round">{ MAXMSP | ZIGSIM | LOGMEIN HAMACHI | OBS | TOUCHDESIGNER | LIVELAB | YOUTUBE | CUSTOM WEBSITE | ZOOM }</span></p>
+          <p><span class="w3-tag w3-orange w3-round">{ MAXMSP | ZIGSIM | LOGMEIN HAMACHI | OBS | TOUCHDESIGNER | LIVELAB | YOUTUBE | WEBSITE | ZOOM }</span></p>
           <hr>
         </div>
         <div class="w3-container">
@@ -130,7 +191,7 @@ html,h1,h2,h3,h4,h5,h6 {font-family: monaco, monospace}
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>MICELLODI // <i><small>programmer, engineer</small></i> </b></h5>
-          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - AUG 2020</h6>
+          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Aug 2020</h6>
           <p>As part of my Applied Music Technology Minor, I custom built a MIDI cello controller called MICELLODI. It components consists of 3D-printed bridge and
           peg box, two 500mm Softpot Membrane Potentiometers and four Piezo Vibration Sensors.</p>
           <p><span class="w3-tag w3-orange w3-round">{ MAX MSP | AUTODESK FUSION360 | REPETIER | ARDUINO }</span></p><br>

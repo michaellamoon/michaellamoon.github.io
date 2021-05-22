@@ -53,14 +53,14 @@ header {height: 100vh}
 
 footer {
   width: 100%;
-  height: 120px;
+  height: 80px;
   background-color: orange;
   text-align: center;
 }
 
 footer p {
   text-align: center;
-  color: black;
+  color: white;
   font-weight: 200;
   font-size: 13px;
   line-height: 1;
@@ -79,6 +79,10 @@ footer a:hover {
   text-decoration: none;
   color: #0080ff;
 }
+.fa{
+    color: white;
+}
+
 
 
 :-webkit-any-link { color: #4e9815; }
