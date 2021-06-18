@@ -21,9 +21,8 @@
     <h1 class="center">ABC<span class="boldWords">W</span>EFGHIJKLMN<span class="boldWords">O</span>PQ<span class="boldWords">RD</span>TUV<span class="boldWords">S</span>XYZ</h1>
     <h2 class="center redtitle">trigger</h2>
     <p class="center i">This project connects RunwayML, Processing, MaxMsp and TouchDesigner to create an audio and visual rich performance.
-      <br>The audio and visuals are all triggered by the text typed into the program. Depending on the number of words typed in, Processing will grab the same amount of colour values from random points of the collaged image created by RunwayML's AttnGAN. These colour values will be converted first into MIDI notes then turned into a readable score the Cellist can play in real-time.
-      MaxMsp is programmed to pitch detect 36 notes ranging from C2-B4.
-      <br>As the Cellist plays, her notes will cause the TouchDesigner particle system to change shapes, colour and positions.</p>
+      <br>The audio and visuals are all triggered by the text typed into the program. As the text is randomly typed into the program by the audience, RunwayML's AttnGAN takes those words to create a collaged image. Depending on the number of words typed in, Processing will grab that same amount of words and grab the colour values of random points on collaged image. These colour values is then converted into MIDI notes and notated onto a readable score the Cellist can play in real-time. This is updated every time a new text is submitted into the program. 
+As the Cellist improvises off of the notes that is given to her, the MaxMsp patch will pitch detect the 36 possible notes she is playing (ranging from C2-B4) and trigger a TouchDesigner particle system to change shapes, colour and positions according to the different pitch detected notes.</p>
       <br>
   </div>
   <h2 class="center redtitle" style="margin-top: 3vw;">about</h2>
