@@ -1,0 +1,77 @@
+
+const auto &landmarkList = cc->Inputs()
+                               .Tag(normalizedLandmarkListTag)
+                               .Get<mediapipe::NormalizedLandmarkList>();
+RET_CHECK_GT(landmarkList.landmark_size(), 0) << "Input landmark vector is empty.";
+
+//gestures
+   let thumbIsOpen = false;
+   let firstFingerIsOpen = false;
+   let secondFingerIsOpen = false;
+   let thirdFingerIsOpen = false;
+   let fourthFingerIsOpen = false;
+   //
+
+   let pseudoFixKeyPoint = landmarkList.landmark(2).x();
+   if (landmarkList.landmark(3).x() < pseudoFixKeyPoint && landmarkList.landmark(4).x() < pseudoFixKeyPoint)
+   {
+       thumbIsOpen = true;
+   }
+
+   pseudoFixKeyPoint = landmarkList.landmark(6).y();
+   if (landmarkList.landmark(7).y() < pseudoFixKeyPoint && landmarkList.landmark(8).y() < pseudoFixKeyPoint)
+   {
+       firstFingerIsOpen = true;
+   }
+
+   pseudoFixKeyPoint = landmarkList.landmark(10).y();
+   if (landmarkList.landmark(11).y() < pseudoFixKeyPoint && landmarkList.landmark(12).y() < pseudoFixKeyPoint)
+   {
+       secondFingerIsOpen = true;
+   }
+
+   pseudoFixKeyPoint = landmarkList.landmark(14).y();
+   if (landmarkList.landmark(15).y() < pseudoFixKeyPoint && landmarkList.landmark(16).y() < pseudoFixKeyPoint)
+   {
+       thirdFingerIsOpen = true;
+   }
+
+   pseudoFixKeyPoint = landmarkList.landmark(18).y();
+   if (landmarkList.landmark(19).y() < pseudoFixKeyPoint && landmarkList.landmark(20).y() < pseudoFixKeyPoint)
+   {
+       fourthFingerIsOpen = true;
+   }
+
+   // Hand gesture recognition
+   if (thumbIsOpen && firstFingerIsOpen && secondFingerIsOpen && thirdFingerIsOpen && fourthFingerIsOpen)
+   {
+      document.getElementById("gesture").textContent= "FIVE!";
+   }
+   else if (!thumbIsOpen && firstFingerIsOpen && secondFingerIsOpen && thirdFingerIsOpen && fourthFingerIsOpen)
+   {
+       document.getElementById("gesture").textContent= "four!";
+   }
+   else if (thumbIsOpen && firstFingerIsOpen && secondFingerIsOpen && !thirdFingerIsOpen && !fourthFingerIsOpen)
+   {
+       document.getElementById("gesture").textContent= "three!";
+   }
+   else if (thumbIsOpen && firstFingerIsOpen && !secondFingerIsOpen && !thirdFingerIsOpen && !fourthFingerIsOpen)
+   {
+       document.getElementById("gesture").textContent= "two!";
+   }
+   else if (!thumbIsOpen && firstFingerIsOpen && !secondFingerIsOpen && !thirdFingerIsOpen && !fourthFingerIsOpen)
+   {
+       document.getElementById("gesture").textContent= "one!";
+   }
+   else if (!thumbIsOpen && !firstFingerIsOpen && !secondFingerIsOpen && !thirdFingerIsOpen && !fourthFingerIsOpen)
+   {
+       document.getElementById("gesture").textContent= "fist!";
+   }
+   else if (!firstFingerIsOpen && secondFingerIsOpen && thirdFingerIsOpen && fourthFingerIsOpen && this->isThumbNearFirstFinger(landmarkList.landmark(4), landmarkList.landmark(8)))
+   {
+       document.getElementById("gesture").textContent= "ok!";
+   }
+   else
+   {
+       document.getElementById("gesture").textContent= "make a gesture!";
+   }
