@@ -1,12 +1,12 @@
 # Index
-handpose-public-index.html : main website html
+**handpose-public-index.html** : main website html
 
-handpose-public-style.css  : main website css
+**handpose-public-style.css**  : main website css
 
 
-handpose-src- App.js       : init webcam(+css) & handpose model
+**handpose-src- App.js**       : init webcam(+css) & handpose model
 
-handpose-src- utilities.js : draw handpose model & detect gestures
+**handpose-src- utilities.js :** draw handpose model & detect gestures
 
 ## Install dependencies
 1. npx create-react-app handpose
