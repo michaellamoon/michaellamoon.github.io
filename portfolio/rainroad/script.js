@@ -1,16 +1,20 @@
 var coordsA = [];
-        coordsA[0] = "115,142,313,328";
-        coordsA[1] = "329,197,529,279";
-        coordsA[2] = "544,133,744,334";
-        coordsA[3] = "300,514,419,692";
-        coordsA[4] = "455,566,645,646";
+        coordsA[0] = "123,24,17,129";
+        coordsA[1] = "32,269,109,188";
+        coordsA[2] = "36,314,101,378";
+        coordsA[3] = "44,423,91,487";
 
-        coordsA[5] = "674,530,943,678";
-        coordsA[6] = "758,797,898,1154";
-        coordsA[7] = "1141,894,1247,1078";
-        coordsA[8] = "1312,945,1516,1030";
-        coordsA[9] = "1549,950,1765,1017";
-        coordsA[10] = "1511,1269,1709,1451";
+        coordsA[4] = "314,46,174,154";
+        coordsA[5] = "254,282,177,173";
+        coordsA[6] = "288,269,364,190";
+        coordsA[7] = "392,157,503,260";
+        coordsA[8] = "534,196,605,265";
+        coordsA[9] = "635,56,722,184";
+        coordsA[10] = "634,275,726,403";
+
+        coordsA[11] = "788,75,879,176";
+        coordsA[12] = "790,299,880,386";
+
 
 function setcoords(areaid, totalOfAreas) {
     document.getElementById('paredea').style.width = "auto";
