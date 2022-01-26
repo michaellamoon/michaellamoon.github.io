@@ -23,32 +23,29 @@
         <div id="image-map">
           <img id="paredea" src="flow.png" usemap="#PAREDE-A">
             <map name="PAREDE-A">
-              <area id="paredea0" title="..."  shape="rect" class="q masterTooltip">
+              <area id="paredea0" title="LED strips- is turned off and on depending on the message it recieves from the photocell and arduino code. <requires 12v external power supply>"  shape="rect" class="q masterTooltip">
                             <area shape="rect"  class="q masterTooltip">
-              <area id="paredea1" title="..." shape="rect" class="w masterTooltip">
+              <area id="paredea1" title="Arduino board (along with the breadboard/pcb)- connects all the components together and connects to the computer/arduino software(IDE)." shape="rect" class="w masterTooltip">
                             <area shape="rect"  class="w masterTooltip">
-              <area id="paredea2" title="..." shape="rect" class="e masterTooltip">
+              <area id="paredea2" title="Photocell sensor- detects the level of light detected. Sends 0- 255 values. 0 being completely dark and 255 being extreamely bright. <requires 5v power>" shape="rect" class="e masterTooltip">
                             <area shape="rect"  class="e masterTooltip">
-              <area id="paredea3" title="..." shape="rect" class="r masterTooltip">
+              <area id="paredea3" title="Light source (flashlight, phone light, mini portable sun)- is directed and shinned onto the Ferrule (aka the black tops of the umbrella)." shape="rect" class="r masterTooltip">
                             <area shape="rect"  class="r masterTooltip">
-              <area id="paredea4" title="..." shape="rect" class="t masterTooltip">
+
+              <area id="paredea4" title="The Arduino IDE- a software to write, edit and run the code needed to control all the physical elements. Recieves data from the photocell and processes data to send to other programs (for visuals/audio) and the LED strips.
+                                        Programmed to output binary (on/off) data from photocells. With each umbrella, a new instance of the Arduino IDE is needed." shape="rect" class="t masterTooltip">
                             <area shape="rect"  class="t masterTooltip">
-              <area id="paredea5" title="..." shape="rect" class="y masterTooltip">
+              <area id="paredea5" title="Processing- recieves all the binary messages sent by the Arduino IDE and routes the on/off switch data to control visual and audio effects changes. Functions as a OSC hub between softwares in this project.
+                                        Similarly like the Arduin, separate instances of the software is needed." shape="rect" class="y masterTooltip">
                             <area shape="rect"  class="y masterTooltip">
-              <area id="paredea6" title="..." shape="rect" class="u masterTooltip">
+
+              <area id="paredea6" title="MAXMSP- controls all the audio elements of the installation. Hold the playlist of songs it is constantly looping and also each of the audio effects associated to each umbrella.
+                                        Recieves OSC data to change between audio effects." shape="rect" class="u masterTooltip">
                             <area shape="rect"  class="u masterTooltip">
-              <area id="paredea7" title="..." shape="rect" class="i masterTooltip">
+              <area id="paredea7" title="TouchDesigner- controls all the visual elements of the installation. Clips of AI-generated videos loaded into software and is manipulated with OSC coming in.
+                                          Also runs the constant loop of the storybook flip through video." shape="rect" class="i masterTooltip">
                             <area shape="rect"  class="i masterTooltip">
-              <area id="paredea8" title="..." shape="rect" class="o masterTooltip">
-                            <area shape="rect"  class="o masterTooltip">
-              <area id="paredea9" title="..." shape="rect" class="p masterTooltip">
-                            <area shape="rect"  class="p masterTooltip">
-              <area id="paredea10" title="... " shape="rect" class="a masterTooltip">
-                            <area shape="rect"  class="a masterTooltip">
-              <area id="paredea11" title="..."shape="rect" class="a masterTooltip">
-                            <area shape="rect"  class="a masterTooltip">
-              <area id="paredea12" title="..."shape="rect" class="a masterTooltip">
-                            <area shape="rect"  class="a masterTooltip">
+
             </map>
           </div>
     <br><br><br><br><br><br>
@@ -65,7 +62,7 @@
         <img class="expics" src="doc/1/prototype1-3.jpg">
         <img class="expics" src="doc/1/breadboardwiring.jpg">
 
-        <iframe src="https://drive.google.com/file/d/1gJbBnxpdqwUwauIBlwZWzYt1kDpMJgkG/preview" width="50%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1gJbBnxpdqwUwauIBlwZWzYt1kDpMJgkG/preview" width="40%" height="400vw" allow="autoplay"></iframe>
 
 
     <p class="lyc" style="margin-top:20vw; margin-bottom: 1vw;">Build</p>
@@ -84,9 +81,19 @@
         <img class="expics" src="doc/2/umbrellaLockedandLoaded.jpg">
         <img class="expics" src="doc/2/umbrellaLockedandLoaded2.jpg">
 
-        <iframe src="https://drive.google.com/file/d/1IIghWNe119y9n6efbV3Q1d6AcSzlIO3o/preview" width="50%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1IIghWNe119y9n6efbV3Q1d6AcSzlIO3o/preview" width="40%" height="400vw" allow="autoplay" style="margin-top: 20vw;"></iframe>
+        <iframe src="https://drive.google.com/file/d/1gJbBnxpdqwUwauIBlwZWzYt1kDpMJgkG/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1kqVnlS30gTCUqFede-k1Kf_DRkeKOf4-/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1I_ipEPcYXMIoE8Hcg8Sy1EUcDrGb59ZJ/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1dCtIp4lc1FW4c8cf5S7cwjeE7WbGPoIu/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1-9-6eixIKobFHjNokgoW2BjsmbnuKMAr/preview" width="40%" height="400vw" allow="autoplay"></iframe>
 
-    <p class="lyc" style="margin-top:50vw; margin-bottom: 1vw;">Ensemble/Install</p>
+        <iframe src="https://drive.google.com/file/d/1sHCrvRC3fLO1PWBGTACwkfBJ8hokSxzy/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1qL9JC6fAOAnlPOV5lBH01UAFqTUotG3U/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1knNGCg7NU1u37UtYJ6-cZGDbvKvRmb9R/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+
+
+    <p class="lyc" style="margin-top:20vw; margin-bottom: 1vw;">Ensemble/Install</p>
         <img class="expics" src="doc/3/umbInstallChains.jpg">
         <img class="expics" src="doc/3/storybookProject.jpg">
         <img class="expics" src="doc/3/storybookProject2.jpg">
@@ -95,6 +102,13 @@
         <img class="expics" src="doc/3/firstdayInstall_umbhang.jpg">
         <img class="expics" src="doc/3/finalUmbLayered.jpg">
         <img class="expics" src="doc/3/finalUmbLayered2.jpg">
+
+        <iframe src="https://drive.google.com/file/d/1-wZB8EWNSTTevYJpO0-OLbExaEmJBIMv/preview" width="40%" height="400vw" allow="autoplay" style="margin-top: 20vw;"></iframe>
+        <iframe src="https://drive.google.com/file/d/1zjvlTDpjmtkKK-93RgBaCm3KUhyuqrt1/preview"width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1XAo5jhPsdF2RRFtc4xpzfRkcGlPM9srK/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+
+        <iframe src="https://drive.google.com/file/d/1TiDpGIRfzNw1uDrlwyzBsifKhxKSSmpt/preview" width="40%" height="400vw" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1CjxOicYUfRbrvGnPjN1CcUmEFqD8TmG6/preview" width="40%" height="400vw" allow="autoplay"></iframe>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
